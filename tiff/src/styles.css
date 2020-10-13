@@ -8,7 +8,9 @@ html{
   
   background-color: rgb(194, 189, 189);
 }
-
+img{
+  width: 20px;
+}
 .title{
   font-family: Roboto;
   font-size: 42px;

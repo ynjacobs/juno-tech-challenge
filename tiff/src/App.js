@@ -1,5 +1,5 @@
 import React from 'react';
-
+import logo from './assets/noun_Movie_1241202.png'; 
 import axios from 'axios';
 import './styles.css';
 
@@ -65,13 +65,13 @@ const getIndicatorByCountry = async ( page = 1) => {
     // const hi = showing ? details.runtime: 'hi';
     return (
       <div>
-      <h1 className="title">Tiff's movies of the year</h1>
+      <h1 className="title">Tiff's movies of the year </h1>
       <div className="outer">
       {
         this.state.movies.map((movie, i) => {
           return (
             
-            <div className="movie" onClick={this.handleClick.bind(this, movie.id)} key={i}>{movie.title}
+            <div className="movie" onClick={this.handleClick.bind(this, movie.id)} key={i}>{movie.title} <img  src={logo} alt="fireSpot"/>
               <div className="opening"><ul><li>Description: {movie.overview}</li> <li> Genre: {genre}</li> <li>Runtime: {details.runtime} min</li> <li>tagline: {details.tagline}</li></ul></div>
             </div>
             
