@@ -1,4 +1,35 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  
+}
+
+html{
+  
+  background-color: rgb(194, 189, 189);
+}
+
+.title{
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 500 ;
+}
+
+.movie .opening {
+  display: none;
+}
+
+.active .opening {
+  display: block
+}
+
+.movie{
+  background-color: #ff4822;
+  padding: 20px;
+}
+
+.outer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
 }

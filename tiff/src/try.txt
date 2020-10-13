@@ -1,0 +1,3 @@
+<ul> { this.state.movies.map( movies => <li onClick={() => this.setState({ showing: !showing })}>{movies.title} { showing ? <div>{movies.overview}</div>: null} </li>)}
+        
+      </ul>
